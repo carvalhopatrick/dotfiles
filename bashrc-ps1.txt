@@ -1,0 +1,26 @@
+# ps1 normal
+PS1="\[\033[1;33m\]\W\[\033[00m\] \$> "
+
+
+
+# PS1 patrick com git
+function print_git_branch() {
+    branch=$(git symbolic-ref HEAD --short 2> /dev/null)
+
+    status=$(git status 2> /dev/null)
+    if $(echo $status | grep 'added to commit' &> /dev/null); then
+    # If we have modified files but no index (blue)
+       c_stat="[1;34m"
+    else
+        if $(echo $status | grep 'to be committed' &> /dev/null); then
+        # If we have files in index (red)
+           c_stat="[1;31m"
+        else
+        # If we are completely clean (green)
+           c_stat="[1;32m"
+        fi
+    fi
+    echo -ne "\033${c_stat}(${branch})]"
+}
+
+PS1=$'\W $(print_git_branch) \$> '
