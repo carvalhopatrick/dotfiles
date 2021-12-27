@@ -1,0 +1,191 @@
+{
+    "window.menuBarVisibility": "default",
+    "workbench.statusBar.visible": true,
+    "extensions.ignoreRecommendations": false,
+    "git.enableSmartCommit": true,
+    "git.fetchOnPull": true,
+    "editor.mouseWheelScrollSensitivity": 1.5,
+    "editor.mouseWheelZoom": true,
+    "editor.parameterHints.cycle": true,
+    "editor.insertSpaces": false,
+
+    "bracket-pair-colorizer-2.colors": [
+        "#ffcc95e7",
+        "#ffcc95e7",
+        "#ffcc95e7"
+    ],
+
+    "workbench.colorCustomizations": {
+        "[Vue Edit Twski]": {
+            "editor.lineHighlightBackground": "#7e767959",
+            "editor.selectionBackground": "#e7376c56",
+            "editor.findMatchBackground": "#e7376c56",
+            "editor.findMatchHighlightBackground": "#00ff9d28",
+            "statusBar.foreground": "#b4b4b4",
+            "statusBar.noFolderBackground": "#000000",
+            "activityBarBadge.background": "#000000",
+            "activityBarBadge.foreground": "#ffffff",
+            "editorWidget.background": "#111111",
+            "editor.background": "#161616",
+            "titleBar.activeBackground": "#111111",
+            "activityBar.background": "#111111",
+            "panel.background": "#111111",
+            "menu.background": "#111111",
+            "sideBar.background": "#111111",
+            "statusBar.background": "#111111",
+            "tab.activeBackground": "#111111",
+            "tab.inactiveBackground": "#111111",
+            "editorGroupHeader.tabsBackground": "#111111"
+        },
+        "[Community Material Theme Ocean High Contrast]": {
+            "editor.foreground": "#a8abb8",
+            "editorCursor.foreground": "#b8b8b8",
+            "statusBar.foreground": "#838383",
+            "statusBar.noFolderBackground": "#000000",
+            "statusBarItem.remoteBackground": "#000000",
+            "statusBarItem.remoteForeground": "#c0c0c0",
+            "notifications.background": "#161824"
+        },
+        "activityBarBadge.background": "#64FFDA",
+        "activityBar.activeBorder": "#64FFDA",
+        "list.activeSelectionForeground": "#64FFDA",
+        "list.inactiveSelectionForeground": "#64FFDA",
+        "list.highlightForeground": "#64FFDA",
+        "scrollbarSlider.activeBackground": "#64FFDA50",
+        "editorSuggestWidget.highlightForeground": "#64FFDA",
+        "textLink.foreground": "#64FFDA",
+        "progressBar.background": "#64FFDA",
+        "pickerGroup.foreground": "#64FFDA",
+        "tab.activeBorder": "#64FFDA",
+        "notificationLink.foreground": "#64FFDA",
+        "editorWidget.resizeBorder": "#64FFDA",
+        "editorWidget.border": "#64FFDA",
+        "settings.modifiedItemIndicator": "#64FFDA",
+        "settings.headerForeground": "#64FFDA",
+        "panelTitle.activeBorder": "#64FFDA",
+        "breadcrumb.activeSelectionForeground": "#64FFDA",
+        "menu.selectionForeground": "#64FFDA",
+        "menubar.selectionForeground": "#64FFDA",
+        "editor.findMatchBorder": "#64FFDA",
+        "selection.background": "#64FFDA40"
+    },
+    "editor.tokenColorCustomizations": {
+        "[Vue Edit Twski]": {
+            /* padrões:
+                types           #ff2c6bf1 (rosa tutti forte)
+                funcoes         #09cbdd (azul claro forte)
+                foreground      #e6e6e6 (branco)
+                strings         #00abc1da (azul escuro)
+                sinais          #ffcc95e7 (laranja claro)
+
+                */
+            "types": "#f57fa2c2"  ,  
+            "comments": "#757474",
+            "functions": "#4ca1a8",     // azul escurinho #4ca1a8    azul claro dhr #a1d7da
+            "keywords": "#ffcc95e7",
+            "textMateRules": [
+                // deixa if, for, etc em ITALICO --- ignorar cor definida aqui, ela nao vale
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        //"foreground": "#89DDFF",
+                        "fontStyle": "italic"
+                    }
+                },
+                // cor de parenteses, brackets, etc
+                {
+                    "scope": "punctuation, constant.other.symbol",
+                    "settings": {
+                        "foreground": "#ffd2a1"
+                    }
+                },
+                // cor de strings
+                {
+                    "name": "string between quotes and template literals",
+                    "scope": "string.quoted.double, string.template",
+                    "settings": {
+                        "foreground": "#45b49ce0"
+                    }
+                },
+                // ???
+                {
+                    "name": "variable object",
+                    "scope": "variable.other.object.property, variable.other.property, meta.template.expression, support.variable.property, variable.language.super, support.class.component.js, entity.name.tag.js",
+                    "settings": {
+                        "foreground": "#dd93b2c5"
+                    }
+                },
+            ]
+        },
+
+        "[Community Material Theme Ocean High Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "punctuation.definition.comment",
+                        "string.quoted.docstring"
+                    ],
+                    "settings": {
+                        "foreground": "#4b5d46",    // stock: #464B5D
+                        "fontStyle": "italic"
+                    }
+                },
+            ]
+        }
+        
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "breadcrumbs.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins"
+    ],
+    "python.pythonPath": "C:\\Users\\Patrick Carvalho\\anaconda3\\python.exe",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "materialTheme.accent": "Bright Teal",
+    "editor.quickSuggestions": null,
+    "workbench.colorTheme": "Community Material Theme",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "--shell-escape", // if you want to have the shell-escape flag
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%.tex"
+            ]
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "python.defaultInterpreterPath": "C:\\Users\\Patrick Carvalho\\anaconda3\\python.exe",
+    "prettier.endOfLine": "auto",
+    "prettier.printWidth": 100,
+    "prettier.useTabs": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "terminal.integrated.cursorBlinking": true
+    
+}

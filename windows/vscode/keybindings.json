@@ -1,0 +1,82 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+space",
+        "command": "-toggleSuggestionFocus",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-workbench.action.debug.stop",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+alt+f5",
+        "command": "workbench.action.debug.run",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-workbench.action.debug.run",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "editor.action.toggleMinimap"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "-workbench.action.editor.changeLanguageMode"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+k l",
+        "command": "workbench.action.splitEditorRight"
+    }
+]
