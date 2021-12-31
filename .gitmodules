@@ -1,0 +1,6 @@
+[submodule "wsl/powerlevel10k"]
+	path = wsl/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "wsl/.local/share/zinit/zinit.git"]
+	path = wsl/.local/share/zinit/zinit.git
+	url = https://github.com/zdharma-continuum/zinit
