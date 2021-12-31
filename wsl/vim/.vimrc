@@ -1,5 +1,6 @@
 :set number
 :set ruler
+:set mouse=a
 
 :augroup numbertoggle
 :  autocmd!

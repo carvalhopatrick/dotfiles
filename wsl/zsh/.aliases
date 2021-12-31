@@ -1,6 +1,3 @@
-
-# Minhas aliases Patrick
-
 alias a_desktop='cd "/mnt/c/Users/Patrick Carvalho/Desktop"'
 alias a_program='cd "/mnt/s/Meu/Estudos/Programming"'
 alias a_coding='cd "/mnt/c/Users/Patrick Carvalho/Desktop/coding"'
@@ -13,3 +10,4 @@ alias termcolors='for code in {000..255}; do print -P -- "$code: %F{$code}Color%
 
 alias ls='ls --color=auto'
 alias la='ls -a'
+alias ll='ls -lah'

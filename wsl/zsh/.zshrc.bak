@@ -78,6 +78,8 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+### Zinit
+
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
@@ -88,6 +90,8 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 # load instantly
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 zinit lucid light-mode for \
     zsh-users/zsh-autosuggestions
 
