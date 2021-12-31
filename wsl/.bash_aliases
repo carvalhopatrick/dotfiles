@@ -8,3 +8,8 @@ alias a_temp='cd "/mnt/c/Users/Patrick Carvalho/Desktop/temp"'
 alias a_downloads='cd "/mnt/c/Users/Patrick Carvalho/Downloads"'
 
 alias a_ps1='export PS1="\[\033[1;33m\]\W\[\033[00m\] \$> "'
+
+alias termcolors='for code in {000..255}; do print -P -- "$code: %F{$code}Color%f"; done'
+
+alias ls='ls --color=auto'
+alias la='ls -a'
