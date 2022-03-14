@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/ptrckpc/dotfiles/.git'
+let g:netrw_dirhist_4='/home/ptrckpc/.vim'
 let g:netrw_dirhist_3='/home/patrick/.vim'
 let g:netrw_dirhist_2='/home/patrick'
 let g:netrw_dirhist_1='/mnt/c/Users/Patrick Carvalho/Desktop/coding/LeetCode-solutions/162_Find peak element (binary search)'
