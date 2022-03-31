@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/ptrckpc/dotfiles/wsl'
+let g:netrw_dirhist_8='/home/ptrckpc/dotfiles'
 let g:netrw_dirhist_7='/home/ptrckpc/dotfiles/.git'
 let g:netrw_dirhist_6='/home/ptrckpc/dotfiles/wsl/bash'
 let g:netrw_dirhist_5='/home/ptrckpc/dotfiles/.git'
