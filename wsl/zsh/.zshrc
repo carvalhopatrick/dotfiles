@@ -52,12 +52,16 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# alias twski
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
 ### exports twski
-export export PATH="/mnt/c/Programs/win32yank/:mnt/c/Program Files/Microsoft VS Code/bin/:$PATH"
+if [ -f ~/.exports ]; then
+    . ~/.exports
+fi
+
 
 ### colors to colored-man-pages plugin
 autoload colors && colors
