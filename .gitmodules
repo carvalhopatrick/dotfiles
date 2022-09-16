@@ -4,3 +4,10 @@
 [submodule "wsl/.local/share/zinit/zinit.git"]
 	path = wsl/.local/share/zinit/zinit.git
 	url = https://github.com/zdharma-continuum/zinit
+[submodule "wsl/vim/.vim/pack/dist/start/vim-airline"]
+	path = wsl/vim/.vim/pack/dist/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim-sensible"]
+	path = wsl/vim/.vim/pack/tpope/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+

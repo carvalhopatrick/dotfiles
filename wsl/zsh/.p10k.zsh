@@ -189,9 +189,11 @@
 
   ################################[ prompt_char: prompt symbol ]################################
   # Green prompt symbol if the last command succeeded.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=76
+  # twski default = 76
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=48
   # Red prompt symbol if the last command failed.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=196
+  # twski default = 196
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=202
   # Default prompt symbol. ❯
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'
   # Prompt symbol in command vi mode.
@@ -208,20 +210,20 @@
 
   ##################################[ dir: current directory ]##################################
   # Default current directory color. 
-  # twski / default 31 / amarelo 11 / turquoise 6
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=11
+  # twski / default 31 / amarelo 11 / turquoise 6 / green 48
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=48
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  # twski / default 103 / amarelo 229 / turquoise 103
+  # twski / default 103 / amarelo 229 / turquoise 103 / green 229
   typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=229
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor. 
-  # twski / default 39 / amarelo 11 / turquoise 6
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=11
+  # twski / default 39 / amarelo 11 / turquoise 6 / green 48
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=48
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.

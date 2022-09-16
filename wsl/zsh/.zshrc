@@ -57,7 +57,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 ### exports twski
-export export PATH="/mnt/c/Program Files/Microsoft VS Code/bin/:$PATH"
+export export PATH="/mnt/c/Programs/win32yank/:mnt/c/Program Files/Microsoft VS Code/bin/:$PATH"
 
 ### colors to colored-man-pages plugin
 autoload colors && colors
