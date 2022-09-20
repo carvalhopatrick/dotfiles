@@ -13,3 +13,13 @@ alias la='ls -a'
 alias ll='ls -lah'
 
 alias code='Code.exe'
+
+cdwin() {
+	A=$(printf '%s' $1 | perl -pe 's/\\/\//g')
+	# 'X:/some/windows/path'
+	
+	B=$(printf '%s' $A | perl -pe 's/(.)(:)/\L\/mnt\/\1/')
+	# '/mnt/x/some/windows/path'
+	
+	cd "$B"
+}
