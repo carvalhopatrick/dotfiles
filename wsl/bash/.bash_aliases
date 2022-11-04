@@ -12,8 +12,8 @@ function cdwin(){
 	cd "$B"
 }
 
-alias a_downloads="cd /mnt/c/Users/patrick.carvalho/Downloads"
-alias a_desktop="cd '/mnt/c/Users/patrick.carvalho/OneDrive - Instituto de Pesquisas Eldorado/Desktop'"
+alias a_downloads="cd /mnt/c/Users/ptrckpc/Downloads"
+alias a_desktop="cd '/mnt/c/Users/ptrckpc/OneDrive - Instituto de Pesquisas Eldorado/Desktop'"
 alias a_dcrs='cd /mnt/d/dCRs'
 
 alias n++="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
