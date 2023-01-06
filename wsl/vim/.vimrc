@@ -2,6 +2,9 @@
 :set ruler
 :set mouse=a
 
+:set listchars=tab:▷▷⋮
+" :set invlist to show tab characters
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
