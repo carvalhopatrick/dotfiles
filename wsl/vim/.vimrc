@@ -1,17 +1,19 @@
 :set number
 :set ruler
 :set mouse=a
+:set showcmd
+:set timeoutlen=1500
+:set ignorecase
+:let mapleader = ";"
 
 :set listchars=tab:▷▷⋮
-" :set invlist to show tab characters
+noremap <Leader><Tab><Tab> :set invlist<CR>
 
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
 :  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 :augroup END
-
-:set ignorecase
 
 " WSL yank to windows clipboard support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
