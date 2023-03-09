@@ -14,7 +14,9 @@ function cdwin(){
 
 alias a_downloads="cd /mnt/c/Users/ptrckpc/Downloads"
 alias a_desktop="cd '/mnt/c/Users/ptrckpc/OneDrive - Instituto de Pesquisas Eldorado/Desktop'"
+alias a_notes="cd '/mnt/c/Users/ptrckpc/OneDrive - Instituto de Pesquisas Eldorado/Desktop/notes'"
 alias a_dcrs='cd /mnt/d/dCRs'
+
 
 alias n++="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
 
