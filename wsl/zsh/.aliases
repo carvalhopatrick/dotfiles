@@ -11,3 +11,5 @@ alias termcolors='for code in {000..255}; do print -P -- "$code: %F{$code}Color%
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -lah'
+
+alias pstop='ps -eo pid,ppid,user,cmd:80,%mem,%cpu,thcount --sort=-%mem | head'
