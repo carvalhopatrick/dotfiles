@@ -20,11 +20,12 @@ alias a_dcrs='cd /mnt/d/dCRs'
 
 alias n++="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
 
+# (?!.) == negative lookahead, para certificar que não vai pegar um .txt.gz
 function convert-aplogs(){
-	cat $(find . | grep c.txt) > crash.txt
-	cat $(find . | grep e.txt) > events.txt
-	cat $(find . | grep r.txt) > radio.txt
-	cat $(find . | grep s.txt) > system.txt
-	cat $(find . | grep k.txt) > kernel.txt
-	cat $(find . | grep m.txt) > main.txt
+	cat $(find . | grep -P 'c\.txt(?!.)') > crash.txt
+	cat $(find . | grep -P 'e\.txt(?!.)') > events.txt
+	cat $(find . | grep -P 'r\.txt(?!.)') > radio.txt
+	cat $(find . | grep -P 's\.txt(?!.)') > system.txt
+	cat $(find . | grep -P 'k\.txt(?!.)') > kernel.txt
+	cat $(find . | grep -P 'm\.txt(?!.)') > main.txt
 }
