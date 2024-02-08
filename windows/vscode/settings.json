@@ -186,6 +186,5 @@
     "prettier.printWidth": 100,
     "prettier.useTabs": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "terminal.integrated.cursorBlinking": true
-    
+    "terminal.integrated.cursorBlinking": true    
 }
