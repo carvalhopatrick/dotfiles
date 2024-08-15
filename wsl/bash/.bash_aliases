@@ -15,7 +15,7 @@ function cdwin(){
 alias a_downloads="cd /mnt/c/Users/ptrckpc/Downloads"
 alias a_desktop="cd '/mnt/c/Users/ptrckpc/OneDrive - Instituto de Pesquisas Eldorado/Desktop'"
 alias a_notes="cd '/mnt/c/Users/ptrckpc/OneDrive - Instituto de Pesquisas Eldorado/Desktop/notes'"
-alias a_dcrs='cd /mnt/d/dCRs'
+alias a_crs='cd /mnt/c/CRs'
 
 
 alias n++="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
@@ -28,4 +28,12 @@ function convert-aplogs(){
 	cat $(find . | grep -P 's\.txt(?!.)') > system.txt
 	cat $(find . | grep -P 'k\.txt(?!.)') > kernel.txt
 	cat $(find . | grep -P 'm\.txt(?!.)') > main.txt
+}
+
+function pget() {
+  if [[ $# -ne 1 ]]; then
+    echo "Usage: pget http://full/artifactory/path/to/file.tar.gz"  
+  else
+    lftp -u ptrckpc ${1%*/*} -e "pget -n 8 -c ${1##*/}; exit"
+  fi
 }
